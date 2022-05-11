@@ -4,8 +4,8 @@ from irc.bot import SingleServerIRCBot
 from requests import get
 from lib import cmds
 
-NAME="TariqBot"
-OWNER="tariq_a"
+NAME="NAMEBot"
+OWNER="OWNER"
 
 
 class Bot(SingleServerIRCBot):
@@ -13,8 +13,8 @@ class Bot(SingleServerIRCBot):
         self.HOST="irc.chat.twitch.tv"
         self.PORT=6667
         self.USERNAME=NAME.lower()
-        self.CLIENT_ID="6gw94kikxmg0tkpy4rkulljv2yu2sk"
-        self.TOKEN="am02xykbuwt328qwlf3sfwxd1qss3z"
+        self.CLIENT_ID="CLIENT_ID"
+        self.TOKEN="TOKEN"
         self.CHANNEL=f"#{OWNER}"
     
         url=f"https://api.twitch.tv/kraken/users?login={self.USERNAME}"
